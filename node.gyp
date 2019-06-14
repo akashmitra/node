@@ -289,6 +289,9 @@
           '-Wl,-bnoerrmsg',
         ],
       }],
+      ['OS=="linux" or OS=="mac"', {
+        'libraries': ['-latomic'],
+      }],
     ],
   },
 
